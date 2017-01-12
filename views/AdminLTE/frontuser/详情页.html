@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>小依伊的个人博客</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+		<style type="text/css">
+			.bg {
+				background-color: #EEEEEE;
+			}
+			
+			.header {
+				background-color: #1BBC9B;
+				height: 120px;
+			}
+			
+			.fontstyle {
+				font-size: 30px;
+				font-family: "微软雅黑";
+				font-weight: bold;
+				color: #fff;
+				line-height: 120px;
+				margin-left: 100px;
+			}
+			
+			.navigation {
+				background-color: #455552;
+			}
+			
+			.navigationsearch {
+				float: right;
+			}
+			
+			.navigationfontstyle {
+				font-size: 15px;
+				font-family: "微软雅黑";
+				color: #fff;
+			}
+			/*导航条放上去時背景颜色*/
+			
+			.navhover li:hover {
+				background-color: #1BBC9B;
+			}
+			/*正文距导航的距离,距左側的距离*/
+			
+			.contextmargin {
+				margin-top: 15px;
+			}
+			
+			.bodyright {
+				background: #fff;
+				padding-left: 0px;
+			}
+			
+			.bodyrightdiv {
+				width: 100%;
+				height: 1000px;
+				border: 0px solid red;
+			}
+			
+			.bodyleft {
+				padding-right: 0px;
+			}
+			
+			.bodyleftlibac {
+				background: #FBFBFB;
+			}
+			
+			.border {
+				border: 0px solid blue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id=".container" class="bg">
+
+			<div class="row">
+				<div class="col-md-12 header">
+					<h1 class="fontstyle">小依伊的个人博客 <small>每天学一点新知识。</small></h1></div>
+			</div>
+
+			<!--
+        	导航条
+        -->
+
+			<div class="container-fluid navigation navigationfontstyle">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#" style="background-color:#1BBC9B ;"><font class="navigationfontstyle">首页</font></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navhover">
+						<li><a href="#"><font class="navigationfontstyle">关于博主</font></a></li>
+						<li><a href="#"><font class="navigationfontstyle">Android</font></a></li>
+						<li><a href="#"><font class="navigationfontstyle">HTML/CSS</font></a></li>
+						<li><a href="#"><font class="navigationfontstyle">JavaScript</font></a></li>
+						<li><a href="#"><font class="navigationfontstyle">node.js</font></a></li>
+					</ul>
+
+					<div class="navigationsearch">
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">搜索</button>
+						</form>
+					</div>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+
+			<!-- /.container-fluid -->
+
+			<!--
+        	作者：1030185276@qq.com
+        	时间：2016-12-07
+        	描述：正文
+        -->
+
+			<div class="row contextmargin">
+
+				<div class="col-md-2 border bodyleft">
+					<ul class="list-group ">
+						<li class="list-group-item bodyleftlibac">首页</li>
+						<li class="list-group-item bodyleftlibac">关于博主</li>
+						<li class="list-group-item  bodyleftlibac">Android</li>
+						<li class="list-group-item bodyleftlibac">HTML/CSS</li>
+						<li class="list-group-item bodyleftlibac">JavaScript</li>
+						<li class="list-group-item bodyleftlibac">node.js</li>
+						<li class="list-group-item bodyleftlibac">项目实战案例分享</li>
+						<li class="list-group-item bodyleftlibac">留言板</li>
+					</ul>
+
+				</div>
+
+				<div class="col-md-10 border bodyright">
+
+					<div class="row">
+						<div class="col-md-12">
+							<center>
+								<h2>Android DiskLruCache完全解析，硬盘缓存的最佳方案</h2></center>
+							<hr style="margin: 10px;" />
+
+							<div class="panel panel-default"style="margin: 20px;">
+								<div class="panel-body">
+									记得在很早之前，我有写过一篇文章Android高效加载大图、多图解决方案，有效避免程序OOM，这篇文章是翻译自Android Doc的，其中防止多图OOM的核心解决思路就是使用LruCache技术。但LruCache只是管理了内存中图片的存储与释放，如果图片从内存中被移除的话，那么又需要从网络上重新加载一次图片，这显然非常耗时。对此，Google又提供了一套硬盘缓存的解决方案：DiskLruCache(非Google官方编写，但获得官方认证)。只可惜，Android Doc中并没有对DiskLruCache的用法给出详细的说明，而网上关于DiskLruCache的资料也少之又少，因此今天我准备专门写一篇博客来详细讲解DiskLruCache的用法，以及分析它的工作原理，这应该也是目前网上关于DiskLruCache最详细的资料了。
+									那么我们先来看一下有哪些应用程序已经使用了DiskLruCache技术。在我所接触的应用范围里，Dropbox、Twitter、网易新闻等都是使用DiskLruCache来进行硬盘缓存的，其中Dropbox和Twitter大多数人应该都没用过，那么我们就从大家最熟悉的网易新闻开始着手分析，来对DiskLruCache有一个最初的认识吧。 但是不知道大家有没有发现，这些内容和图片在从网络上获取到之后都会存入到本地缓存中，因此即使手机在没有网络的情况下依然能够加载出以前浏览过的新闻。而使用的缓存技术不用多说，自然是DiskLruCache了，那么首先第一个问题，这些数据都被缓存在了手机的什么位置呢？
+									其实DiskLruCache并没有限制数据的缓存位置，可以自由地进行设定，但是通常情况下多数应用程序都会将缓存的位置选择为 /sdcard/Android/data/
+									<application package>/cache 这个路径。选择在这个位置有两点好处：第一，这是存储在SD卡上的，因此即使缓存再多的数据也不会对手机的内置存储空间有任何影响，只要SD卡空间足够就行。第二，这个路径被Android系统认定为应用程序的缓存路径，当程序被卸载的时候，这里的数据也会一起被清除掉，这样就不会出现删除程序之后手机上还有很多残留数据的问题。 那么这里还是以网易新闻为例，它的客户端的包名是com.netease.newsreader.activity，因此数据缓存地址就应该是 /sdcard/Android/data/com.netease.newsreader.activity/cache
+										，我们进入到这个目录中看一下，结果如下图所示：
+									那么这些文件到底都是什么呢？看到这里相信有些朋友已经是一头雾水了，这里我简单解释一下。上面那些文件名很长的文件就是一张张缓存的图片，每个文件都对应着一张图片，而journal文件是DiskLruCache的一个日志文件，程序对每张图片的操作记录都存放在这个文件中，基本上看到journal这个文件就标志着该程序使用DiskLruCache技术了。
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<center>
+						<nav>
+							<ul class="pagination">
+								<li><a href="#">&laquo;</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">&raquo;</a></li>
+							</ul>
+						</nav>
+					</center>
+				</div>
+
+			</div>
+
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>
+	</body>
+
+</html>

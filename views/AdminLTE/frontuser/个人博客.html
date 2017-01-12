@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>小依伊的个人博客</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+		<style type="text/css">
+			.bg {
+				background-color: #EEEEEE;
+			}
+			
+			.header {
+				background-color: #1BBC9B;
+				height: 120px;
+			}
+			
+			.fontstyle {
+				font-size: 30px;
+				font-family: "微软雅黑";
+				font-weight: bold;
+				color: #fff;
+				line-height: 120px;
+				margin-left: 100px;
+			}
+			
+			.navigation {
+				background-color: #455552;
+			}
+			
+			.navigationsearch {
+				float: right;
+			}
+			
+			.navigationfontstyle {
+				font-size: 15px;
+				font-family: "微软雅黑";
+				color: #fff;
+			}
+			/*导航条放上去時背景颜色*/
+			
+			.navhover li:hover {
+				background-color: #1BBC9B;
+			}
+			/*正文距导航的距离,距左側的距离*/
+			
+			.contextmargin {
+				margin-top: 15px;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			/*正文新闻标题字体*/
+			
+			.newstitle {
+				margin-left: 15px;
+				font-family: "微软雅黑";
+				color: #1BBC9B;
+				float: left;
+				margin-left: 5px;
+			}
+			/*正文新闻字体*/
+			
+			.newsbody {
+				font-family: "微软雅黑";
+			}
+			/*正文新闻标题栏*/
+			
+			.titlediv {
+				width: 100%;
+				float: right;
+			}
+			/*正文新闻标题栏span*/
+			
+			.titledivspan {
+				margin-left: 15px;
+				color: #DA5147;
+				float: left;
+			}
+			/*正文新闻标题栏底部*/
+			
+			.newsfooter {
+				float: right;
+				margin-right: 10px;
+			}
+			/*正文新闻标题栏底部flag*/
+			
+			.newsfooterflag {
+				margin-right: 5px;
+				margin-left: 20px;
+				color: #9B9794;
+			}
+			/*正文新闻标题栏底部flag旁文字*/
+			
+			.newfooterfont {
+				font-family: "微软雅黑";
+				color: #9B9794;
+			}
+			
+			.rightfontstyle {
+				font-size: 15px;
+				font-family: "微软雅黑";
+				color: #1BBC9B;
+			}
+			
+			.spanbgcolor {
+				background-color: #1BBC9B;
+			}
+			
+			.righttitlefontstyle {
+				font-size: 15px;
+				font-family: "微软雅黑";
+				color: #1BBC9B;
+			}
+			
+			.rightfriendfontstyle {
+				font-size: 15px;
+				font-family: "微软雅黑";
+				color: #1BBC9B;
+			}
+			
+			.rightfriendtitlefontstyle {
+				font-size: 15px;
+				font-family: "微软雅黑";
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id=".container" class="bg">
+
+			<div class="row">
+				<div class="col-md-12 header">
+					<h1 class="fontstyle">小依伊的个人博客 <small>每天学一点新知识。</small></h1></div>
+			</div>
+
+			<!--
+        	导航条
+        -->
+
+			<div class="container-fluid navigation navigationfontstyle">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#" style="background-color:#1BBC9B ;"><font class="navigationfontstyle">首页</font></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navhover">
+						<li><a href="#"><font class="navigationfontstyle">关于博主</font></a></li>
+						<li><a href="#"><font class="navigationfontstyle">Android</font></a></li>
+						<li><a href="#"><font class="navigationfontstyle">HTML/CSS</font></a></li>
+						<li><a href="#"><font class="navigationfontstyle">JavaScript</font></a></li>
+						<li><a href="#"><font class="navigationfontstyle">node.js</font></a></li>
+					</ul>
+
+					<div class="navigationsearch">
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">搜索</button>
+						</form>
+					</div>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+
+			<!-- /.container-fluid -->
+
+			<!--
+        	作者：1030185276@qq.com
+        	时间：2016-12-07
+        	描述：正文
+        -->
+
+			<div class="row contextmargin">
+				<div class="col-md-9">
+
+					<div class="row">
+						<div class="col-md-12">
+
+							<div class="panel panel-default" style="margin-bottom: 10px;">
+								<div class="panel-body">
+									<div class="titlediv"><span class="glyphicon glyphicon-tag titledivspan"></span>
+										<h4 class="media-heading newstitle">Android LayoutInflater原理分析，带你一步步深入了解View(一) </h4></div>
+									<div class="panel-body" style="margin-top: 15px;">
+										<div class="media">
+											<a class="media-left media-middle" href="#">
+												<img src="./images/Meinv072.jpg" width="125" data-src="" alt="...">
+											</a>
+											<div class="media-body newsbody">
+												中午，罗晋与唐嫣先后宣布恋情，罗晋更是对唐嫣深情告白称自己是她永远的依靠。之后不到一小时，唐嫣的好友杨幂等在微博转发并送上深深的祝福。 　　 杨幂还曾在微博为唐嫣庆生，并称：“希望你早点找到那个对你好，独一无二的他”，之后又力挺好友的新恋情，网友们纷纷感叹其是“中国好闺蜜”。唐嫣方确认消息称：“我们都知道在一起，不过没有聊过什么时候会公开，所以大家都觉得很惊喜，祝福他们这一对。” 　　 除了杨幂之外，何炅、佟丽娅、姚晨、甘薇等也在微博祝福了唐嫣罗晋这对恋人。
+											</div>
+										</div>
+									</div>
+									<div class="newsfooter">
+										<span class="glyphicon glyphicon-user newsfooterflag"></span><font class="newfooterfont" style="color: #1BBC9B;">admin</font>
+										<span class="glyphicon glyphicon-time newsfooterflag"></span><font class="newfooterfont">24小时前</font>
+										<span class="glyphicon glyphicon-eye-open newsfooterflag"></span><font class="newfooterfont">5C</font></span>
+										<span class="glyphicon glyphicon-comment newsfooterflag"></span><font class="newfooterfont" style="color: #1BBC9B;">2评论</font></span>
+										<span class="glyphicon glyphicon-heart-empty newsfooterflag" style="color: #FF858E;"></span><font class="newfooterfont" style="color: #FF858E;">0喜欢</font></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default" style="margin-bottom: 10px;">
+								<div class="panel-body">
+									<div class="titlediv"><span class="glyphicon glyphicon-tag titledivspan"></span>
+										<h4 class="media-heading newstitle"> Android Volley完全解析(二)，使用Volley加载网络图片 </h4></div>
+									<div class="panel-body" style="margin-top: 15px;">
+										<div class="media">
+											<a class="media-left media-middle" href="#">
+												<img src="./images/Meinv072.jpg" width="125" data-src="" alt="...">
+											</a>
+											<div class="media-body newsbody">
+												中午，罗晋与唐嫣先后宣布恋情，罗晋更是对唐嫣深情告白称自己是她永远的依靠。之后不到一小时，唐嫣的好友杨幂等在微博转发并送上深深的祝福。 　　 杨幂还曾在微博为唐嫣庆生，并称：“希望你早点找到那个对你好，独一无二的他”，之后又力挺好友的新恋情，网友们纷纷感叹其是“中国好闺蜜”。唐嫣方确认消息称：“我们都知道在一起，不过没有聊过什么时候会公开，所以大家都觉得很惊喜，祝福他们这一对。” 　　 除了杨幂之外，何炅、佟丽娅、姚晨、甘薇等也在微博祝福了唐嫣罗晋这对恋人。
+											</div>
+										</div>
+									</div>
+									<div class="newsfooter">
+										<span class="glyphicon glyphicon-user newsfooterflag"></span><font class="newfooterfont" style="color: #1BBC9B;">admin</font>
+										<span class="glyphicon glyphicon-time newsfooterflag"></span><font class="newfooterfont">24小时前</font>
+										<span class="glyphicon glyphicon-eye-open newsfooterflag"></span><font class="newfooterfont">5C</font></span>
+										<span class="glyphicon glyphicon-comment newsfooterflag"></span><font class="newfooterfont" style="color: #1BBC9B;">2评论</font></span>
+										<span class="glyphicon glyphicon-heart-empty newsfooterflag" style="color: #FF858E;"></span><font class="newfooterfont" style="color: #FF858E;">0喜欢</font></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default" style="margin-bottom: 10px;">
+								<div class="panel-body">
+									<div class="titlediv"><span class="glyphicon glyphicon-tag titledivspan"></span>
+										<h4 class="media-heading newstitle"> Android Volley完全解析(二)，使用Volley加载网络图片 </h4></div>
+									<div class="panel-body" style="margin-top: 15px;">
+										<div class="media">
+											<a class="media-left media-middle" href="#">
+												<img src="./images/Meinv072.jpg" width="125" data-src="" alt="...">
+											</a>
+											<div class="media-body newsbody">
+												中午，罗晋与唐嫣先后宣布恋情，罗晋更是对唐嫣深情告白称自己是她永远的依靠。之后不到一小时，唐嫣的好友杨幂等在微博转发并送上深深的祝福。 　　 杨幂还曾在微博为唐嫣庆生，并称：“希望你早点找到那个对你好，独一无二的他”，之后又力挺好友的新恋情，网友们纷纷感叹其是“中国好闺蜜”。唐嫣方确认消息称：“我们都知道在一起，不过没有聊过什么时候会公开，所以大家都觉得很惊喜，祝福他们这一对。” 　　 除了杨幂之外，何炅、佟丽娅、姚晨、甘薇等也在微博祝福了唐嫣罗晋这对恋人。
+											</div>
+										</div>
+									</div>
+									<div class="newsfooter">
+										<span class="glyphicon glyphicon-user newsfooterflag"></span><font class="newfooterfont" style="color: #1BBC9B;">admin</font>
+										<span class="glyphicon glyphicon-time newsfooterflag"></span><font class="newfooterfont">24小时前</font>
+										<span class="glyphicon glyphicon-eye-open newsfooterflag"></span><font class="newfooterfont">5C</font></span>
+										<span class="glyphicon glyphicon-comment newsfooterflag"></span><font class="newfooterfont" style="color: #1BBC9B;">2评论</font></span>
+										<span class="glyphicon glyphicon-heart-empty newsfooterflag" style="color: #FF858E;"></span><font class="newfooterfont" style="color: #FF858E;">0喜欢</font></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default" style="margin-bottom: 10px;">
+								<div class="panel-body">
+									<div class="titlediv"><span class="glyphicon glyphicon-tag titledivspan"></span>
+										<h4 class="media-heading newstitle"> Android Volley完全解析(二)，使用Volley加载网络图片 </h4></div>
+									<div class="panel-body" style="margin-top: 15px;">
+										<div class="media">
+											<a class="media-left media-middle" href="#">
+												<img src="./images/Meinv072.jpg" width="125" data-src="" alt="...">
+											</a>
+											<div class="media-body newsbody">
+												中午，罗晋与唐嫣先后宣布恋情，罗晋更是对唐嫣深情告白称自己是她永远的依靠。之后不到一小时，唐嫣的好友杨幂等在微博转发并送上深深的祝福。 　　 杨幂还曾在微博为唐嫣庆生，并称：“希望你早点找到那个对你好，独一无二的他”，之后又力挺好友的新恋情，网友们纷纷感叹其是“中国好闺蜜”。唐嫣方确认消息称：“我们都知道在一起，不过没有聊过什么时候会公开，所以大家都觉得很惊喜，祝福他们这一对。” 　　 除了杨幂之外，何炅、佟丽娅、姚晨、甘薇等也在微博祝福了唐嫣罗晋这对恋人。
+											</div>
+										</div>
+									</div>
+									<div class="newsfooter">
+										<span class="glyphicon glyphicon-user newsfooterflag"></span><font class="newfooterfont" style="color: #1BBC9B;">admin</font>
+										<span class="glyphicon glyphicon-time newsfooterflag"></span><font class="newfooterfont">24小时前</font>
+										<span class="glyphicon glyphicon-eye-open newsfooterflag"></span><font class="newfooterfont">5C</font></span>
+										<span class="glyphicon glyphicon-comment newsfooterflag"></span><font class="newfooterfont" style="color: #1BBC9B;">2评论</font></span>
+										<span class="glyphicon glyphicon-heart-empty newsfooterflag" style="color: #FF858E;"></span><font class="newfooterfont" style="color: #FF858E;">0喜欢</font></span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-3">
+					<div class="panel panel-default">
+						<div class="panel-body righttitlefontstyle">热门文章</div>
+						<ul class="list-group">
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">328</span><font class="rightfontstyle">图片缓存技术，有效避免OOM</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">199</span><font class="rightfontstyle">Android照片墙应用实现</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">80</span><font class="rightfontstyle">Volley完全解析（一）</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">80</span><font class="rightfontstyle">Volley完全解析（二）</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">71</span><font class="rightfontstyle">Android下拉刷新完全解析</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">56</span><font class="rightfontstyle">layoutInflater源码解析</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">21</span><font class="rightfontstyle">自定义View(一)</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">10</span><font class="rightfontstyle">自定义View(二)</font>
+							</li>
+						</ul>
+
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-body righttitlefontstyle">文章存档</div>
+						<ul class="list-group">
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">1</span><font class="rightfontstyle">2016年12月</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">1</span><font class="rightfontstyle">2016年11月</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">2</span><font class="rightfontstyle">2016年9月</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">2</span><font class="rightfontstyle">2016年8月</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">3</span><font class="rightfontstyle">2016年3月</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">2</span><font class="rightfontstyle">2015年11月</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">1</span><font class="rightfontstyle">2015年5月</font>
+							</li>
+							<li class="list-group-item">
+								<span class="badge spanbgcolor">5</span><font class="rightfontstyle">2015年3月</font>
+							</li>
+						</ul>
+					</div>
+
+					<div class="list-group">
+						<a href="#" class="list-group-item active rightfriendtitlefontstyle" style="background-color:#1BBC9B;">
+						    友情链接
+						  </a>
+						<a href="#" class="list-group-item rightfriendfontstyle" style="color: #1BBC9B;">顾骏的博客</a>
+						<a href="#" class="list-group-item rightfriendfontstyle" style="color: #1BBC9B;">郭霖的博客</a>
+						<a href="#" class="list-group-item rightfriendfontstyle" style="color: #1BBC9B;">storm zhang</a>
+						<a href="#" class="list-group-item rightfriendfontstyle" style="color: #1BBC9B;">ITxuye</a>
+					</div>
+
+				</div>
+			</div>
+
+			<nav>
+				<ul class="pagination">
+					<li><a href="#">&laquo;</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+
+</html>
